@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: rgb(163, 48, 13);
 }
 
 .App-logo {
@@ -9,7 +10,7 @@
 }
 
 .App-header {
-  background-color: rgb(24, 25, 26);
+  background-color: peru;
   height: 250px;
   padding: 20px;
   color: white;
@@ -17,7 +18,7 @@
 
 
 .App-footer {
-  background-color: rgb(24, 25, 26);
+  background-color: peru;
   height: 250px;
   padding: 20px;
   color: white;
@@ -29,9 +30,25 @@
 
 .App-intro {
   font-size: large;
+  background-color: rgb(74, 184, 10);
 }
+/* 
+.App-body {
+  font-size: large;
+  background-color: rgb(36, 26, 48);
+} */
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+/* 
+.Udacity {
+  background-color: orchid;
+  
+}
+
+.codeyourfuture {
+background-color: orange;
+} */
