@@ -1,6 +1,8 @@
 .App {
   text-align: center;
-  background-color: rgb(163, 48, 13);
+  background-color: rgba(31, 32, 68, 0.712);
+  background-image: -moz-element(bg.jpg)
+
 }
 
 .App-logo {
@@ -10,7 +12,7 @@
 }
 
 .App-header {
-  background-color: peru;
+  background-color: rgba(31, 32, 68, 0.712);
   height: 250px;
   padding: 20px;
   color: white;
@@ -18,7 +20,7 @@
 
 
 .App-footer {
-  background-color: peru;
+  background-color: rgba(31, 32, 68, 0.712);
   height: 250px;
   padding: 20px;
   color: white;
@@ -26,11 +28,25 @@
 
 .App-title {
   font-size: 1.5em;
+  color: white;
+
 }
 
+.KeySkills {
+  color: white;
+  background-color: rgba(31, 32, 68, 0.712);
+
+}
+
+.PersonalProfile {
+  color: gold;
+  background-color: rgba(31, 32, 68, 0.712);
+}
 .App-intro {
   font-size: large;
-  background-color: rgb(74, 184, 10);
+  background-color: rgba(31, 32, 68, 0.712);
+  color: white;
+
 }
 /* 
 .App-body {
@@ -43,6 +59,13 @@
   to { transform: rotate(360deg); }
 }
 
+.CYFdis {
+  border: 3px solid rgb(53, 168, 18);
+  /* padding: 30px; */
+  padding-left: 80px;
+  padding-right: 80px;
+
+}
 /* 
 .Udacity {
   background-color: orchid;
