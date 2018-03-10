@@ -7,7 +7,7 @@ import PersonalProfile from './components/PersonalProfile';
 import KeySkills from './components/KeySkills';
 import EducationBackGround from './components/EducationBackGround';
 // import CodeYourFutureDetails from './components/CodeYourFutureDetails';
-import CodeYourFutureDiscription from './components/CodeYourFutureDiscription';
+// import CodeYourFutureDiscription from './components/CodeYourFutureDiscription';
 
 
 class App extends Component {
@@ -36,7 +36,7 @@ class App extends Component {
           <p className="education">
             <Button name="codeyourfuture" value = "3333" />
                {/* <CodeYourFutureDetails  title = 'CodeYourFuture'  text = 'eoifjmkdjfoldfk'/> */}
-               <CodeYourFutureDiscription/>
+               {/* <CodeYourFutureDiscription/> */}
             <Button name=" Udacity(Scholarship)" />
             <Button name="Work Experience" />
             <Button name="Volunteering Experience" />

@@ -1,4 +1,7 @@
 import React from 'react';
+// import ReactDOM from 'react-dom';
+// import CodeYourFutureDiscription from './CodeYourFutureDiscription';
+
 
 // class Button extends React.Component {
 
@@ -23,9 +26,21 @@ import React from 'react';
 //     }
 // }
 
-function Button (props){
-    return (<button>{props.name}</button>)
+class Button extends React.Component {
+    CodeYourFutureDiscription() {
+        alert('Full Stack Web Development Programme	April -Nov 2017'
+        )
+    }
+    render() {
+        return (<button onClick={this.CodeYourFutureDiscription}>CodeYourFuture</button>)
+    }
+
 }
+
+
+// {props.name}
+// function Button (props){
+// }
 export default Button;
 
 
