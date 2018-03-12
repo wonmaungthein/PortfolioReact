@@ -10,7 +10,7 @@ class PersonalProfile extends React.Component {
         return (
             <div>
                 <h1 style ={styles}>Personal Profile</h1>
-                <p>A self-motivated, energetic and determined individuals who tried to accomplish the set goals within limited time. I am approachable, very cooperative, supportive and detail oriented person. I have great interest in web development, am curious to learn more and create beautiful websites. I enjoy solving problems, taking responsibility, contributing my skills in group projects and in community. I have been following an intensive full stack web development program at CodeYourFuture, and I hope that I land my first job as a developer once I graduate from the course.</p>
+                <p>A self-motivated, energetic and determined individual who has the ability to accomplish set goals within limited time. I am approachable, cooperative, supportive and a detail conscious person. I am dedicated to achieve my set goals. I have great interest in web development, and I am always excited to learn more and create engaging, interactive websites. I also enjoy solving problems, taking responsibility and using my skills in group projects.</p>
             </div>
         )
     }
