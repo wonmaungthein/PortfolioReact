@@ -9,7 +9,7 @@
 }
 
 .navbar {
-  text-align: center;
+  /* text-align: center; */
   background-color: rgba(31, 32, 68, 0.712);
   height: 50px;
   padding: 20px;
@@ -26,6 +26,8 @@
 }
 
 .firstSection {
+  display: grid;
+  grid-template-columns: auto auto;
   border: 2px solid bisque;
 }
 .App-footer {
@@ -48,10 +50,10 @@
 }
 
 .App-body {
-  display: grid;
-  grid-template-areas:
+  display: block;
+  /* grid-template-areas:
     "personaltitle  KeySkillstitle"
-    "ProfileText  KeySkills";
+    "ProfileText  KeySkills"; */
   font-size: large;
   /* padding: 20px; */
   /* background-color: rgba(31, 32, 68, 0.712); */

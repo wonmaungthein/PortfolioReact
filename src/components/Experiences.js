@@ -11,11 +11,21 @@ export class Experiences extends Component {
     return (
       <div>
         <h1>Experiences</h1>
-        <CodeYourFutureDiscription />
-        <EliteCare />
-        <ExploreLearning />
-        <EllensGlen />
-        <ActionGroup />
+        <div>
+          <CodeYourFutureDiscription />
+        </div>
+        <div>
+          <EliteCare />
+        </div>
+        <div>
+          <ExploreLearning />
+        </div>
+        <div>
+          <EllensGlen />
+        </div>
+        <div>
+          <ActionGroup />
+        </div>
         {/* <div className="section1">section1</div>
         <div className="section2">section2</div>
         <div className="section3">section3</div>
