@@ -1,11 +1,16 @@
 import React, { Component } from "react";
-import logo from "./me.jpg";
 import "./bg.jpg";
 import "./App.css";
 // import Button from "./components/Button";
 import PersonalProfile from "./components/PersonalProfile";
 import KeySkills from "./components/KeySkills";
 import { Experiences } from "./components/Experiences";
+import { Education } from "./components/Education";
+import { Volunteering } from "./components/Volunteering";
+import { Awards } from "./components/Awards";
+import { Header } from "./Header";
+import { Footer } from "./components/Footer";
+import { Nav } from "./components/NavBar/Nav";
 // import EducationBackGround from "./components/EducationBackGround";
 // import CodeYourFutureDetails from './components/CodeYourFutureDetails';
 // import CodeYourFutureDiscription from './components/CodeYourFutureDiscription';
@@ -14,28 +19,47 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Won Maung Thein</h1>
-          <h2 className="App-title">Junior Web-developer</h2>
-        </header>
+        <div className="navbar">
+          <Nav />
+        </div>
+        <div>
+          <Header />
+        </div>
 
         <div className="App-body">
-          <div className="PersonalProfile">
-            <PersonalProfile />
+          <div className="firstSection">
+            <div className="PersonalProfile">
+              <PersonalProfile />
+            </div>
+            <div className="KeySkills">
+              <KeySkills />
+            </div>
           </div>
-          <div className="KeySkills">
-            <KeySkills />
-          </div>
-        </div>
-        <div className="experiences">
 
-          <Experiences />
-          
+          <div className="secondSection">
+            <div className="experiences">
+              <Experiences />
+            </div>
+          </div>
+          <div className="thirdSection">
+            <div className="education">
+              <Education />
+            </div>
+          </div>
+          <div className="forthSection">
+            <div className="volunteering">
+              <Volunteering />
+            </div>
+          </div>
+          <div className="fifthSection">
+            <div className="awards">
+              <Awards />
+            </div>
+          </div>
         </div>
-        <footer className="App-footer">
-          <h1>This part is a footer.</h1>
-        </footer>
+        <div>
+          <Footer />
+        </div>
       </div>
     );
   }
