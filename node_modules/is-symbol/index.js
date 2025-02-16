@@ -1,18 +1,30 @@
 'use strict';
 
-var toStr = Object.prototype.toString;
-var hasSymbols = typeof Symbol === 'function' && typeof Symbol() === 'symbol';
+var callBound = require('call-bound');
+var $toString = callBound('Object.prototype.toString');
+var hasSymbols = require('has-symbols')();
+var safeRegexTest = require('safe-regex-test');
 
 if (hasSymbols) {
-	var symToStr = Symbol.prototype.toString;
-	var symStringRegex = /^Symbol\(.*\)$/;
-	var isSymbolObject = function isSymbolObject(value) {
-		if (typeof value.valueOf() !== 'symbol') { return false; }
-		return symStringRegex.test(symToStr.call(value));
+	var $symToStr = callBound('Symbol.prototype.toString');
+	var isSymString = safeRegexTest(/^Symbol\(.*\)$/);
+
+	/** @type {(value: object) => value is Symbol} */
+	var isSymbolObject = function isRealSymbolObject(value) {
+		if (typeof value.valueOf() !== 'symbol') {
+			return false;
+		}
+		return isSymString($symToStr(value));
 	};
+
+	/** @type {import('.')} */
 	module.exports = function isSymbol(value) {
-		if (typeof value === 'symbol') { return true; }
-		if (toStr.call(value) !== '[object Symbol]') { return false; }
+		if (typeof value === 'symbol') {
+			return true;
+		}
+		if (!value || typeof value !== 'object' || $toString(value) !== '[object Symbol]') {
+			return false;
+		}
 		try {
 			return isSymbolObject(value);
 		} catch (e) {
@@ -20,8 +32,9 @@ if (hasSymbols) {
 		}
 	};
 } else {
+	/** @type {import('.')} */
 	module.exports = function isSymbol(value) {
 		// this environment does not support Symbols.
-		return false;
+		return false && value;
 	};
 }
